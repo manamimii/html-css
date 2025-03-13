@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        /*
+        # = id nã pode ter duas id no msm lugar
+        . = class pode ter mais de uma classe n msm lugar tipo h2 vai configurar todo o h2
+        : = pseudo-class
+        :: = pseudo-element
+        > = children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial{
+            background-color: rgb(255, 140, 140);
+
+        }
+       .especial::before {
+            content: '➡️';
+        }
+        .especial::after{
+            content: '⬅️';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(234, 118, 118);
+        }
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.git.io" target="_blank">Repositorio GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" class="especial">Canal no Youtube</a></li>
+        <li><a href="https//youtube.com/cursoemvideo/" target="_blank"> Curso em video</a></li>
+    </ul>
+</body>
+</html>
